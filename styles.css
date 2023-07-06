@@ -1,0 +1,28 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px hsl(220, 12%, 71%);
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 20rem;
+  text-align: center;
+}
+
+.qr-code-image {
+  border-radius: 10px;
+}
+
+p {
+  color: hsl(220, 15%, 55%);
+  padding: 0 1rem;
+}
