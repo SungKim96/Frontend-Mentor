@@ -1,0 +1,69 @@
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  overflow: hidden;
+  padding: 200px 150px;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.insights {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+}
+
+.stat {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  padding-block-start: 1rem;
+}
+
+.title {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  padding-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container-1 {
+  background: hsla(244, 38%, 16%);
+  width: 550px;
+  height: 40vh;
+  padding: 50px;
+}
+
+.container-2 {
+  background: hsl(277, 64%, 61%);
+  height: 386.8px;
+}
+
+img {
+  width: 500px;
+  height: 386.8px;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* <source
+          media="(min-width: 780px)"
+          srcset="/Order summary component/stats-preview-card-component-main/images/image-header-desktop.jpg"
+          alt=""
+        />
+        <source media="(min-width: 375px)" srcset="image-header-mobile.jpg" />
+ */
