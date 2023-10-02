@@ -1,27 +1,31 @@
 body {
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
+  display: flex;
   background-color: hsl(30, 38%, 92%);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 200px;
+  padding: 10px;
 }
 
 img {
-  width: 350px;
-  height: 400px;
+  width: 300px;
+  height: 450px;
   border-radius: 10px;
-  padding: 1px;
+  padding-right: 0.8rem;
 }
 
 .box {
-  display: flex;
-  flex-direction: column;
+  display: -webkit-inline-flex;
+  align-items: center;
   border-radius: 10px;
+  /* width: 650px; */
   background-color: hsl(0, 0%, 100%);
 }
 
 .about-perfume {
   width: 250px;
-  padding: 0 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 p {
@@ -38,6 +42,8 @@ p {
   font-family: 'Fraunces', serif;
   color: hsl(212, 21%, 14%);
   font-size: 32px;
+  margin: 1px;
+  padding: 1px;
 }
 
 .price {
@@ -66,7 +72,8 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   text-align: center;
-  padding-block: 1rem;
+  width: 13rem;
+  height: 2.5rem;
   cursor: pointer;
 }
 
@@ -74,8 +81,31 @@ p {
   background-color: hsl(129, 89%, 11%);
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (max-device-width: 480px) {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+  }
+
   .box {
-    flex-direction: row;
+    display: inline;
+    align-items: center;
+    margin: 1rem;
+    padding: 1px;
+  }
+
+  .about-perfume {
+    display: block;
+  }
+
+  .perfume-name {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 300px;
+    height: 3rem;
   }
 }
