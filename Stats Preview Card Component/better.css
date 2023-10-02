@@ -1,0 +1,116 @@
+:root {
+  /* colors */
+  --white-color: hsl(0, 0%, 100%);
+  --main-paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --stat-heading-color: hsla(0, 0%, 100%, 0.6);
+  --dark-blue-color: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet-color: hsl(277, 64%, 61%);
+  /* typography */
+  --font-family: 'Inter', Arial, sans-serif;
+  --font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-blue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 950px;
+  max-height: 350px;
+  border-radius: 0.625rem;
+}
+
+.opacity {
+  background-color: var(--soft-violet-color);
+  max-width: 476px;
+  max-height: 350px;
+  border-radius: 0rem 0.625rem 0.625rem 0rem;
+}
+
+.card-image {
+  height: 100%;
+  opacity: 0.5;
+  display: flex;
+  mix-blend-mode: multiply;
+  border-radius: 0rem 0.625rem 0.625rem 0rem;
+}
+
+.title {
+  color: var(--white-color);
+  font-family: var(--font-family);
+  padding: 16px 55px;
+}
+
+span {
+  color: var(--stat-heading-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+h1 > span {
+  color: var(--soft-violet-color);
+  font-size: 32px;
+}
+
+.content {
+  color: var(--main-paragraph-color);
+  padding: 5px 52px 46px;
+}
+
+.information {
+  display: flex;
+  padding-left: 52px;
+  gap: 50px;
+}
+
+.number {
+  display: flex;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+  body {
+    padding: 100px 0 100px 0;
+  }
+  .container {
+    flex-direction: column;
+    max-width: 450px;
+    max-height: 1000px;
+  }
+
+  .opacity {
+    border-radius: 10px;
+  }
+
+  .titile {
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0rem 2.1rem;
+  }
+
+  .information {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.063rem 0rem;
+  }
+
+  .number {
+    justify-content: center;
+  }
+}
