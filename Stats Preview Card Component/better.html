@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="better.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="opacity">
+          <div class="card-image">
+            <picture>
+              <source
+                media="(max-width: 780px)"
+                srcset="
+                  /stats-preview-card-component-main/images/image-header-mobile.jpg
+                "
+              />
+              <img src="images/image-header-desktop.jpg" alt="women working" />
+            </picture>
+
+            <!-- <img
+              src="./images/image-header-desktop.jpg"
+              class="image"
+              alt="women working and smiling"
+            /> -->
+          </div>
+        </div>
+        <div class="text">
+          <div class="title">
+            <h1>Get <span>insights</span> that help your business grow.</h1>
+          </div>
+
+          <div class="content">
+            <span
+              >Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall
+              efficiency.</span
+            >
+          </div>
+          <div class="information">
+            <div id="information1">
+              <span><span class="number">10k+</span>COMPANIES</span>
+            </div>
+            <div id="information2">
+              <span class="number">314</span>
+              <span>TEMPLATES</span>
+            </div>
+            <div id="information3">
+              <span class="number">12M+</span>
+              <span>QUERIES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
